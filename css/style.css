@@ -1,8 +1,25 @@
 @charset "UTF-8";
 
-.red-box{
-  width: 500px;
-  height: 500px;
+.box{
+  margin: auto;
+  display: block;
+}
+
+.size-box{
+  width: 400px;
+  height: 400px;
   background-color: #ff0000;
-  display: inline-block;
+  text-align: center;
+}
+
+@media screen(max-width:960px) {
+  .size-box{
+    width:200px;
+    height:200px;
+    display:none;
+  }
+}
+
+.color-box{
+  background-color: ;
 }
