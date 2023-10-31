@@ -2,14 +2,15 @@
 
 .box{
   margin: auto;
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
+/*Q1*/
 .size-box{
   width: 400px;
   height: 400px;
   background-color: #ff0000;
-  text-align: center;
 }
 
 @media screen and (max-width:960px) {
@@ -19,11 +20,11 @@
   }
 }
 
+/*Q2*/
 .color-box{
   background-color: #ff0000;
   width: 300px;
   height: 300px;
-  text-align: center;
 }
 
 @media screen and (max-width:960px){
@@ -31,3 +32,128 @@
     background-color: #007bff;
   }
 }
+
+/*Q3*/
+.margin-box1{
+  background-color: #0008ff;
+  width: 300px;
+  height: 300px;
+  margin-right: 75px;
+}
+
+.margin-box2{
+  background-color: #22ff00;
+  width: 300px;
+  height: 300px;
+  margin-left: 75px;
+}
+
+@media screen and (max-width:960px){
+  .margin-box1{
+    margin-right: 25px;
+  }
+  .margin-box2{
+    margin-left: 25px;
+  }
+}
+
+/*Q4*/
+.f-box{
+  width: 600px;
+}
+
+.float-box1{
+  background-color: #ff0000;
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+.float-box2{
+  background-color: #0008ff;
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+@media screen and (max-width:960px){
+  .float-box1{
+    float: none;
+  }
+
+  .float-box2{
+    float: none;
+  }
+}
+
+/*Q5*/
+.replace-box{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+.container-A{
+  background-color: #ff0000;
+  width: 300px;
+  height: 300px;
+}
+
+.container-B{
+  background-color: #0008ff;
+  width: 300px;
+  height: 300px;
+}
+
+.container-C{
+  background-color: #ff8400;
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width:960px){
+  .replace-box{
+    flex-direction: row-reverse;
+  }
+}
+
+/*Q6*/
+.r-box{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.container-AA{
+  background-color: #00ff51;
+  width: 300px;
+  height: 300px;
+}
+
+.container-BB{
+  background-color: #d4ff00;
+  width: 300px;
+  height: 300px;
+}
+
+.container-CC{
+  background-color: #ff00e1;
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width:960px){
+  .container-AA{
+    order: 1;
+  }
+
+  .container-BB{
+    order: 2;
+  }
+
+  .container-CC{
+    order: -1;
+  }
+}
+
+/*Q7*/
