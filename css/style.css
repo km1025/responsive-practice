@@ -59,11 +59,11 @@
 
 /*Q4*/
 .f-box{
-  display: inline-block;
   width: 600px;
+  margin: auto;
 }
 
-.f-bolx::after {
+.f-box::after {
   content: " ";
   display: block;
   clear: both;
@@ -198,12 +198,12 @@
 
 @media screen and (max-width:960px){
   .h-box1{
-    visibility: hidden
+    display: none;
   }
 }
 
 @media screen and (min-width:960px){
   .h-box3{
-    visibility: hidden
+    display: none;
   }
 }
