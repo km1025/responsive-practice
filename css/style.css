@@ -67,10 +67,7 @@
   content: "";
   display: block;
   clear: both;
-  margin: auto;
-  width: 600px;
- }
-
+}
 
 .float-box1{
   background-color: #ff0000;
